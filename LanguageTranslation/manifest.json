@@ -1,0 +1,29 @@
+  
+  {
+    "name": "Translation Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "images/language.png"
+    },
+    "icons": {
+      "16": "images/language.png",
+      "48": "images/language.png",
+      "128": "images/language.png"
+    },
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*",
+       "*://*/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
